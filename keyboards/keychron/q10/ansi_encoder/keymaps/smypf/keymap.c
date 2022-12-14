@@ -14,6 +14,20 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/*
+  How to flash Q10 Keyboard:
+  https://www.keychron.com/blogs/archived/how-to-factory-reset-or-flash-your-qmk-via-enabled-keychron-q10-keyboard
+
+  1. Unplug the keyboard
+  2. Take keycap off of right spacebar
+  3. Press and hold the RESET button on the PCB
+  4. Plug in the keyboard
+  5. Compile and flash the firmware
+     qmk compile --keyboard keychron/q10/ansi_encoder --keymap smypf
+     qmk flash --keyboard keychron/q10/ansi_encoder --keymap smypf
+  6. After the firmware is flashed press and hold FN + J + Z
+*/
+
 #include QMK_KEYBOARD_H
 
 // clang-format off
